@@ -62,7 +62,7 @@ function sendMail() {
     };
 
     const serviceID = "service_24cdsfp";
-    const templateID = "template_bmpa4wd";
+      const templateID = "template_bmpa4wd";
 
     emailjs.send(serviceID, templateID, params)
         .then(res => {
