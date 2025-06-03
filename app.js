@@ -23,6 +23,19 @@ videoList.forEach(function(video){
     })
 })
 
+//ui sound
+
+const hoverSound = document.getElementById('hoverSound');
+const cards = document.querySelectorAll('.bento-grid .card');
+
+cards.forEach(card => {
+  card.addEventListener('mouseenter', () => {
+    hoverSound.currentTime = 0; // reset sound to beginning
+    hoverSound.play();
+  });
+});
+
+
 // form handling
 document.getElementById('contactForm').addEventListener('submit', function(e){
     e.preventDefault();

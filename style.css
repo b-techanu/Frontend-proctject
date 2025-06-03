@@ -3,7 +3,7 @@ body {
     background: linear-gradient(90deg, rgba(18, 17, 17, 1) 0%, rgba(65, 69, 69, 1) 50%, rgba(18, 17, 17, 1) 100%);
     color: white;
     padding: 3rem;
-    position: relative;
+    /* position: relative; */
 }
 
 * {
@@ -83,6 +83,18 @@ main h1 {
     background-image: linear-gradient(rgb(133, 133, 133), rgb(255, 255, 255));
     color: transparent;
     background-clip: text;
+}
+
+main h2{
+    text-align: center;
+    font-size: 7.5rem;
+    font-weight: 700;
+    letter-spacing: 5px;
+    line-height: 1;
+    background-image: linear-gradient(rgb(133, 133, 133), rgb(255, 255, 255));
+    color: transparent;
+    background-clip: text;
+    display: none;
 }
 
 .location {
@@ -392,7 +404,6 @@ main h1 {
     margin: 0 auto;
 }
 
-/* Contact grid layout */
 /* Contact Grid Layout - UPDATED */
 .contact-grid {
     display: grid;
@@ -552,15 +563,6 @@ textarea.form-control {
     display: block;
 }
 
-/* @media (max-width: 768px) {
-    .contact-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .contact-header h3 {
-        font-size: 3rem;
-    }
-} */
 
 footer {
     display: flex;
@@ -619,6 +621,9 @@ footer {
 }
 
 @media (max-width:768px) {
+    main h1{
+        display: none;
+    }
     main h2 {
         display: block;
         margin-top: -3rem;
@@ -649,8 +654,8 @@ footer {
     }
 
     .projects {
-        display: flex;
-        margin-top: 200px;
+        /* display: auto; */
+        margin-top: 80rem;
     }
 
     .projects h3 {
@@ -681,7 +686,7 @@ footer {
     }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
     .conatct-grid {
         grid-template-columns: 1fr 1fr;
     }
@@ -697,7 +702,7 @@ footer {
     }
 
     .logo {
-        font-size: 1.2rem;
+        font-size: 1.2rem ;
     }
 
     .location {
@@ -709,10 +714,4 @@ footer {
         font-size: 0.9rem;
     }
 
-}
-
-@media(max-width: 768px) {
-    main h1 {
-        display: none;
-    }
 }
